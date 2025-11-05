@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white2">
+
+    <Spinner
+        android:id="@+id/spTemperatura"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="144dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/copilot_20251105_154014" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="De:"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/spTemperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:textColor="#2A2727"
+        app:layout_constraintBottom_toTopOf="@+id/btnConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <Spinner
+        android:id="@+id/spTemperatura2"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTemperatura"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Temperatura"
+        android:inputType="numberDecimal"
+        android:textColor="#2A2727"
+        android:textColorHint="#807474"
+        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para:"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/spTemperatura2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTemperatura"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
