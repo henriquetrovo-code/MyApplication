@@ -6,61 +6,57 @@
     android:layout_height="match_parent"
     android:background="@drawable/white2">
 
-    <Button
-        android:id="@+id/btnView"
+    <TextView
+        android:id="@+id/txtQuantidadeProduto"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:text="Dados do Estoque"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.547" />
 
-    <Button
-        android:id="@+id/btnAddQuantidade"
+    <TextView
+        android:id="@+id/txtNomeProduto"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:text="Adicionar Quantidade do Estoque"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.333" />
 
-    <Button
-        android:id="@+id/btnAdd"
+    <TextView
+        android:id="@+id/txtPrecoProduto"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:text="Adicionar ao Estoque"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.439" />
 
-    <Button
-        android:id="@+id/btnRemoverQuantidade"
+    <TextView
+        android:id="@+id/txtTotalValor"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:text="Remover Quantidade do Estoque"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.646" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView13"
         android:layout_width="144dp"
         android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027"

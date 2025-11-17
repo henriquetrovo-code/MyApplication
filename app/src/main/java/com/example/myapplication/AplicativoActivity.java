@@ -3,30 +3,31 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.EmpresaClass.FuncionariosActivity;
+import com.example.myapplication.EstoqueClass.EstoqueActivity;
+import com.example.myapplication.SalarioClass.SalarioActivity;
+
 public class AplicativoActivity extends AppCompatActivity {
-    Button btnFrases, btnConverter, btnTemperatura, btnCep, btnPet, btnCompras, btnCamera;
+    Button btnFrases, btnConverter, btnTemperatura, btnCep, btnPet, btnCompras, btnCamera, btnSalario, btnEstoque, btnEmpresa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aplicativo);
 
-        // Inicializando TODOS os botões
         btnConverter = findViewById(R.id.btnConverter);
         btnFrases = findViewById(R.id.btnFrases);
         btnTemperatura = findViewById(R.id.btnTemperatura);
         btnCep = findViewById(R.id.btnCep);
         btnPet = findViewById(R.id.btnPet);
-
-        // --- ADICIONE ESTAS DUAS LINHAS ---
-        // Certifique-se que o seu XML `aplicativo.xml` tem botões com os IDs `R.id.btnCompras` e `R.id.btnCamera`
         btnCompras = findViewById(R.id.btnCompras);
         btnCamera = findViewById(R.id.btnCamera);
-        // ------------------------------------
-
-        // Agora o código abaixo vai funcionar, pois os botões não são mais nulos.
+        btnSalario = findViewById(R.id.btnSalario);
+        btnEstoque = findViewById(R.id.btnEstoque);
+        btnEmpresa = findViewById(R.id.btnEmpresa);
 
         btnFrases.setOnClickListener(v -> {
             Intent intent = new Intent(AplicativoActivity.this, HomeActivity.class);
@@ -60,6 +61,21 @@ public class AplicativoActivity extends AppCompatActivity {
 
         btnCamera.setOnClickListener(v -> {
             Intent intent = new Intent(AplicativoActivity.this, CameraActivity.class);
+            startActivity(intent);
+        });
+
+        btnSalario.setOnClickListener(v -> {
+            Intent intent = new Intent(AplicativoActivity.this, SalarioActivity.class);
+            startActivity(intent);
+        });
+
+        btnEstoque.setOnClickListener(v -> {
+            Intent intent = new Intent(AplicativoActivity.this, EstoqueActivity.class);
+            startActivity(intent);
+        });
+
+        btnEmpresa.setOnClickListener(v -> {
+            Intent intent = new Intent(AplicativoActivity.this, FuncionariosActivity.class);
             startActivity(intent);
         });
     }

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- Permissões devem vir antes da <application> -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,16 +11,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
-        android:usesCleartextTraffic="true"
-        tools:targetApi="31">
-
-        <!-- Suas Activities -->
+        android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,6 +29,18 @@
         <activity android:name=".PetActivity" android:exported="false" />
         <activity android:name=".ComprasActivity" android:exported="false" />
         <activity android:name=".CameraActivity" android:exported="false" />
-
+        <activity android:name=".SalarioClass.SalarioActivity" android:exported="false" />
+        <activity android:name=".EstoqueClass.EstoqueActivity" android:exported="false" />
+        <activity android:name=".EstoqueClass.AddEstoqueActivity" android:exported="false" />
+        <activity android:name=".EstoqueClass.ViewEstoqueActivity" android:exported="false" />
+        <activity android:name=".EstoqueClass.RemoverQuantidadeActivity" android:exported="false" />
+        <activity android:name=".EstoqueClass.AddQuantidadeActivity" android:exported="false" />
+        <activity android:name=".EmpresaClass.FuncionariosActivity" android:exported="false" />
+        <activity android:name=".EmpresaClass.BonusGerenteActivity" android:exported="false" />
+        <activity android:name=".EmpresaClass.HorasExtrasActivity" android:exported="false" />
+        <activity android:name=".EmpresaClass.SalarioBaseActivity" android:exported="false" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
 </manifest>
